@@ -23,6 +23,6 @@ class App extends \atk4\ui\App {
               $this->layout->leftMenu->addItem(['Ieraksti', 'icon'=>'unordered list'], ['admin','check'=>'list']);
           }
 
-              $this->db = \atk4\data\Persistence::connect('mysql:host=127.0.0.1;dbname=main_db;charset=utf8', 'root', '');
+              
   }
   }
