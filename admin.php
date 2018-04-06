@@ -14,11 +14,12 @@ if (isset($_SESSION['admin_access'])) {
       	parent::init();
       	$this->addField('name');
         $this->addField('surname');
-        $this->addField('phone_number',['default'=>371]);
         $this->addField('email');
+        $this->addField('phone_number',['default'=>371]);
       	//$this->addField('password',['type'=>'password']);
         $this->addField('birthday',['type'=>'date']);
         $this->addField('notes', ['type'=>'text']);
+        $this->addField('age');
     }
     }
 
