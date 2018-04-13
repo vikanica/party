@@ -6,9 +6,7 @@ if (isset($_SESSION['admin_access'])) {
   {
     $app = new \atk4\ui\App('Записи на тусовку');
     $app->initLayout('Admin');
-if(isset($_ENV['con'])){
-  $db = new \atk4\data\Persistence_SQL('mysql:dbname=party;host=localhost','root','');
-}
+
 
     class Friends extends \atk4\data\Model {
       	public $table = 'party-b';
