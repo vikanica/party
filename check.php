@@ -12,7 +12,7 @@ if(isset($_ENV['pass'])){
 }else{
   $pass = 'password';
 }
-$form->onSubmit(function($form) {
+$form->onSubmit(function($form) use($pass),($app) {
   if ($form->model['password'] == $pass) {
       $_SESSION['admin_access'] = 'fnupaw39r23rvwefk91248';
       return new \atk4\ui\jsExpression('document.location = "admin.php" ');
