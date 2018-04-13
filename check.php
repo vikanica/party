@@ -7,7 +7,6 @@ $check = new \atk4\data\Model(new \atk4\data\Persistence_Array($a));
 $check->addField('password',['type'=>'password','required'=>TRUE]);
 $form = $app->layout->add('Form');
 $form->setModel($check);
-$pass = $_ENV['pass'];
 if(isset($_ENV['pass'])){
   $pass = $_ENV['pass'];
 }else{
